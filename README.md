@@ -2,7 +2,7 @@
 仿京东地址管理（三级）
 
 
-项目是对https://github.com/chihane/JDAddressSelector的修改
+项目是对https://github.com/chihane/JDAddressSelector 的修改
 
 修改内容:
 
@@ -12,3 +12,5 @@
 
 3.去掉DBFlow,减小apk大小
 
+
+![image](https://github.com/fayou147/JDAddressManager/EA57A728D5E19A770F25D2F5FF162172.jpg)
