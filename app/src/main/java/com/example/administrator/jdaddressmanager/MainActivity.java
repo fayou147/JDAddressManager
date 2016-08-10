@@ -13,6 +13,7 @@ import com.example.administrator.jdaddressmanager.jdaddressselector.model.County
 import com.example.administrator.jdaddressmanager.jdaddressselector.model.Province;
 
 public class MainActivity extends AppCompatActivity implements OnAddressSelectedListener {
+    BottomDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements OnAddressSelected
             @Override
             public void onClick(View v) {
 //                BottomDialog.show(MainActivity.this, MainActivity.this);
-                BottomDialog dialog = new BottomDialog(MainActivity.this);
+                dialog = new BottomDialog(MainActivity.this);
                 dialog.setOnAddressSelectedListener(MainActivity.this);
                 dialog.show();
             }
@@ -39,5 +40,13 @@ public class MainActivity extends AppCompatActivity implements OnAddressSelected
                         (county == null ? "" : "\n" + county.name);
 
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
     }
 }

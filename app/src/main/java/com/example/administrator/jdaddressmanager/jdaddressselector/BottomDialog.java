@@ -56,4 +56,13 @@ public class BottomDialog extends Dialog {
 
         return dialog;
     }
+
+    @Override
+    public void dismiss() {
+        if (selector != null) {
+            selector.closeDB();
+        }
+        super.dismiss();
+    }
+
 }

@@ -567,4 +567,10 @@ public class AddressSelector implements AdapterView.OnItemClickListener {
             this.addressProvider = DEFAULT_ADDRESS_PROVIDER;
         }
     }
+
+    public void closeDB(){
+        if (database!=null){
+            database.close();
+        }
+    }
 }
