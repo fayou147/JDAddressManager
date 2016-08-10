@@ -13,4 +13,4 @@
 3.去掉DBFlow,减小apk大小
 
 
-![image](https://github.com/fayou147/JDAddressManager/EA57A728D5E19A770F25D2F5FF162172.jpg)
+![image](https://github.com/fayou147/JDAddressManager/blob/master/EA57A728D5E19A770F25D2F5FF162172.jpg)
